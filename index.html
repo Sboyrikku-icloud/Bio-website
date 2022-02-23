@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sboyrikku
+    </title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<!---   there the CSS work   -->    
+    <style>
+        *{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.topnav {
+  width: 100% !important;
+  backgroun-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(0,162,232);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-style: Tahoma
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: rgb(0,162,232);
+  border-radius: 4px;
+  transition: 0.8s ease-in-out;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+#myTopnav {
+}
+.wrapper {
+  width: 100%;
+  height: auto !important;
+  padding: 1em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 500px;
+}
+.search-box {
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid rgb(0,162,232);
+  color: grey;
+  font-family: sans-serif;
+  font-style: Tahoma;
+}
+
+h1 {
+  width: 100%;
+  padding: 1em 2em;
+  color: white;
+  font-size: 30px;
+  font-style: 'Roboto',Arial,sans-serif;
+  font-family: sans-serif;
+  text-align: center;
+}
+span {
+  font-family: sans-serif;
+  font-style: 'Roboto',Arial,sans-serif;
+  color: rgb(0,162,232);
+}
+.MyBtn {
+  padding: 1em 2em;
+  background: white;
+  color: rgb(0,162,232);
+  font-family: sans-serif;
+  font-style: "Roboto",Arial,sans-serif;
+  border-radius: 4em;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.MyBtn:hover {
+  padding: 1em 3em;
+  color: white;
+  background: rgb(0,162,232);
+  transition: 0.8s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+.team {
+  background: black;
+}
+.team:after {
+  width: 100% !important;
+  height: auto !important;
+  content: "";
+  display: table;
+  clear: both;
+}
+.about_me {
+  width: 100% !important;
+  display: grid;
+  justify-content: center;
+  height: 200px;
+  padding: 10px;
+  font-size: 23px;
+  font-style: 'Roboto',Arial,sans-serif;
+  font-family: sans-serif;
+  color: white;
+}
+.link {
+  color: rgb(0,162,232);
+}
+i {
+  font-style: normal;
+}
+.column1 {
+  display: flex;
+  float: left;
+  width: 33.33%;
+  padding: 1em 2em;
+  height: auto !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(https://image.shutterstock.com/image-photo/web-design-website-homepage-ideas-260nw-369012689.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+.column2 {
+  display: flex;
+  float: left;
+  width: 33.33%;
+  padding: 1em 2em;
+  height: auto !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+url(https://cdn.pixabay.com/photo/2017/02/05/00/19/web-design-2038872__340.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+.column3 {
+  display: flex;
+  float: left;
+  width: 33.33%;
+  padding: 1em 2em;
+  height: auto !!important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://cdn.pixabay.com/photo/2016/11/29/06/15/plans-1867745__340.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+h3 {
+  width: 100% !important;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-style: 'Roboto',Arial,sans-serif;
+  color: gray;
+  padding: 1em 2em;
+  letter-spacing: 8px;
+}
+h4 {
+  text-align: center;
+  fonnt-size: 40px;
+  color: white;
+  font-family: sans-serif;
+  font-style: 'Roboto',Arial,sans-serif;
+  letter-spacing: 4px;
+}
+.what_i_do {
+  display: flex;
+  fle-wrap: wrap;
+  text-align: center;
+  padding: 1em 2em;
+  justify-content: center;
+  backgorund-color: white;
+}
+.column1P {
+  width: 500px;
+  height: 200px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-style: 'Roboto',Arial,sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:50px;}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-back {
+  transform: rotateX(180deg);
+}
+
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 30px; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+/* 
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Front Side</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Back Side</h2>
+    </div>
+  </div>
+</div> */
+    </style>
+
+   
+  </head>
+  <body>
+
+<div class="wrapper">
+      <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="https://www.instagram.com/sboyrikku/">skills</a>
+  <a href="mailto:hackelhack11@gmail.com">Contact</a>
+  <a href="https://sboyrikku.blogspot.com/">About</a>
+  </a>
+    </div>
+  <h1>WELCOME TO <span>MaZ-Hel ERA</span></h1>
+  <div class="about_me">
+     <h2>Hello <i>&#9995;</i></h2>
+  <p>I am SbOy Rikku<br>
+   Check My Projects on  <a href="https://github.com/Sboyrikku-icloud" class="link">Github</a><br>
+    I work, play and collaborate.
+  </p><br><br>
+    </div>
+</div>
+  
+   <div class="my-skills">
+     <div class="container">
+       <div class="skills html">
+         99%
+       </div>
+     </div>
+  </div>
+  
+  <div class="what_i_do">
+    <h3> WHAT I DO <img src="https://cdn.pixabay.com/photo/2017/03/30/13/33/html-2188441__340.png" width="50px" height="40px"> </h3>
+  </div>
+<div class="team">
+  <div class="column1">
+    <h4>
+      DESIGN
+    </h4>
+    <p class="column1P">
+      I design fantastic websites and<br>
+      mobile applications for andriod and<br>
+      IOS.
+    </p>
+  </div>
+  <div class="column2">
+    <h4>
+      CEH EC-Council
+    </h4>
+    <p class="column1P">
+        Ethical hackers can reduce the chances of attacks by monitoring all security 
+        standards in advance. Hence, organizations today are hiring professionals with 
+        certified EC Council ethical hacking<br>
+      
+      web apllications.
+      </p>
+  </div>
+  <div class="column3">
+    <h4>
+      Ethics
+    </h4>
+    <p class="column1P">
+        I was addicted to hacking, more for the intellectual challenge, the curiosity, the seduction of adventure;
+        not for stealing, or causing damage or writing computer viruses <br>
+
+      </p>
+  </div>
+</div>
+  
+
+
+
+  </body>
+</html>
